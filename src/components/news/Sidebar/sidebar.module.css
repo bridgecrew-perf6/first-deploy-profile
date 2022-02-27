@@ -1,0 +1,109 @@
+@charset "UTF-8";
+.sidebar__ava {
+  background-color: var(--grey);
+  padding-bottom: 20px;
+}
+
+.sidebar__img_bg img {
+  width: 100%;
+}
+
+.sidebar__img_ava {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: -50px;
+}
+
+.sidebar__img_ava img {
+  position: relative;
+  z-index: 1;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  display: block;
+}
+
+.sidebar__name {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.sidebar__skil {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+
+.sidebar__btn {
+  font-size: 12px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.sidebar__users {
+  position: relative;
+  margin-top: 25px;
+  background-color: var(--grey);
+  padding: 15px 15px;
+}
+
+.sidebar__users_title {
+  background-color: inherit;
+}
+
+.sidebar__users_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sidebar__user {
+  cursor: pointer;
+  flex: 0 1 45%;
+  width: 45%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sidebar__user_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.sidebar__user_name {
+  flex: 1 1 auto;
+  text-align: center;
+  height: 45px;
+}
+
+.sidebar__user_name:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 20%;
+  top: 30%;
+  /* Положение подсказки */
+  z-index: 1;
+  /* Отображаем подсказку поверх других элементов */
+  background: rgba(255, 255, 230, 0.9);
+  /* Полупрозрачный цвет фона */
+  font-family: Arial, sans-serif;
+  /* Гарнитура шрифта */
+  font-size: 13px;
+  /* Размер текста подсказки */
+  padding: 5px 10px;
+  /* Поля */
+  border: 1px solid #333;
+  /* Параметры рамки */
+}
+/*# sourceMappingURL=sidebar.module.css.map */

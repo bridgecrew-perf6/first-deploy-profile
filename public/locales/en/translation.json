@@ -1,0 +1,26 @@
+{   
+    "nav": {
+        "news":"News",
+        "auth":"Auth",
+        "login":"Log in",
+        "profile": "Profile",
+        "login_out":"Login out"
+    },
+
+    "auth": {
+        "auth":"You have registered under the",
+        "err":"A user with this email already exists",
+        "send":"Send",
+        "title":"Authorization",
+        "name":"Your name",
+        "email":"Your email",
+        "password":"Password",
+        "password_confirm":"Confirm Password"
+
+    },
+
+    "login": {
+        "login": "You have logged in your account",
+        "err": "Incorrect login or password"
+    }
+}

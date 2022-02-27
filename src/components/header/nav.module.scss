@@ -1,0 +1,122 @@
+body 
+    header {
+        all: inherit;
+        color: var(--color);
+        background-color: var(--grey);
+    }
+.navCom {
+    &__nav {
+        font-weight: bold;
+        width: 100%;
+        color: inherit !important;
+        background-color: inherit !important;
+        &_box {
+            flex: 1 1 auto;
+            flex-wrap: nowrap;
+        }
+
+        & a {
+            color: inherit !important;
+        }
+    }
+    
+
+    &__icon {
+        width: fit-content;
+        max-width: 60px;
+    }
+
+    &__burger_box {
+        flex: 1 1 auto;
+    }
+
+    &__profile {
+        justify-content: flex-end;
+        align-items: center;
+        &_name {
+            font-weight: 600;
+        }
+        &_ava {
+            flex: 0 1 auto;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 10px;
+        }
+        &_logo_box {
+            margin-right: 5px;
+                & img {
+                    border-radius: 50%;
+                }
+        }
+    }
+
+    &__lang {
+        & button {
+            width: fit-content;
+            margin-right: 0;
+            height: 40px;
+            padding: 0 35px;
+        }
+        & div {
+            flex-direction: column;
+            min-width: auto;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__nav_box {
+            position: relative;
+        }
+        &__icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+        }
+
+        &__burger_box {
+        }
+
+        &__burger {
+            display: block;
+            margin-left: auto;
+            height: 50px;
+        }
+
+        &__profile {
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            &_ava {
+                margin-top: 12px;
+            }
+            & form {
+                width: 100%;
+            }
+        }
+
+
+        &__lang {
+            & div {
+                top: auto !important;
+                bottom: 100%;
+                right: 0;
+                left: auto !important;
+            }
+        }
+
+        @media (max-width: 575px) {
+            &__profile {
+            }
+        }
+    }
+
+
+    @media(max-width:750px) {
+        &__profile_ava {
+            flex: 1 1 100%;
+            margin-bottom: 15px;
+        }
+    }
+}

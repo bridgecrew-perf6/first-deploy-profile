@@ -1,0 +1,110 @@
+body
+header {
+  all: inherit;
+  color: var(--color);
+  background-color: var(--grey);
+}
+
+.navCom__nav {
+  font-weight: bold;
+  width: 100%;
+  color: inherit !important;
+  background-color: inherit !important;
+}
+
+.navCom__nav_box {
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+}
+
+.navCom__nav a {
+  color: inherit !important;
+}
+
+.navCom__icon {
+  width: fit-content;
+  max-width: 60px;
+}
+
+.navCom__burger_box {
+  flex: 1 1 auto;
+}
+
+.navCom__profile {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navCom__profile_name {
+  font-weight: 600;
+}
+
+.navCom__profile_ava {
+  flex: 0 1 auto;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.navCom__profile_logo_box {
+  margin-right: 5px;
+}
+
+.navCom__profile_logo_box img {
+  border-radius: 50%;
+}
+
+.navCom__lang button {
+  width: fit-content;
+  margin-right: 0;
+  height: 40px;
+  padding: 0 35px;
+}
+
+.navCom__lang div {
+  flex-direction: column;
+  min-width: auto;
+}
+
+@media (max-width: 991px) {
+  .navCom__nav_box {
+    position: relative;
+  }
+  .navCom__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .navCom__burger {
+    display: block;
+    margin-left: auto;
+    height: 50px;
+  }
+  .navCom__profile {
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .navCom__profile_ava {
+    margin-top: 12px;
+  }
+  .navCom__profile form {
+    width: 100%;
+  }
+  .navCom__lang div {
+    top: auto !important;
+    bottom: 100%;
+    right: 0;
+    left: auto !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .navCom__profile_ava {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=nav.module.css.map */

@@ -1,0 +1,12 @@
+html[data-theme="light"] {
+  --color: black;
+  --background: #f4f4f4;
+  --grey:#fff;
+}
+
+html[data-theme="dark"] {
+  --color: #fff;
+  --background: #212529;
+  --grey:#373737;
+}
+/*# sourceMappingURL=theme.css.map */

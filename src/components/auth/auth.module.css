@@ -1,0 +1,82 @@
+.auth__form {
+  color: inherit;
+  padding-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.auth__input, .auth__btn {
+  width: 100%;
+  border: 1px solid #dddfe2;
+  color: black;
+  border-radius: 10px;
+  padding: 15px 15px;
+  margin: 20px 0;
+}
+
+.auth__input[data-set="err"], .auth__btn[data-set="err"] {
+  border-color: red;
+}
+
+.auth__input:focus ~ label,
+.auth__input:not(:placeholder-shown) ~ label, .auth__btn:focus ~ label,
+.auth__btn:not(:placeholder-shown) ~ label {
+  top: -9px;
+  color: inherit;
+}
+
+.auth__input_box {
+  position: relative;
+}
+
+.auth__label {
+  transition: top 0.3s ease;
+  position: absolute;
+  left: 15px;
+  top: 37px;
+  color: black;
+}
+
+.auth__btn {
+  background-color: #1877f2;
+  text-transform: uppercase;
+  font-size: 23px;
+  color: #fff;
+}
+
+.auth__btn:focus {
+  background-color: #29487d;
+}
+
+.auth__btn:disabled {
+  opacity: 0.3;
+}
+
+.auth__h2 {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgba(0, 128, 0, 0.5);
+}
+
+.auth__h2[data-set="err"] {
+  color: red;
+  opacity: 0.5;
+}
+
+@media (max-width: 780px) {
+  .auth__form {
+    width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth__form {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=auth.module.css.map */
